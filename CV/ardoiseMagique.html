@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ardoise magique</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
+	<script src="js/Slate.class.js"></script>
+	<script src="js/Palette.class.js"></script>
+	<script src="js/Program.class.js"></script>
+	<script src="js/Bross.class.js" ></script>
+</head>
+<body>
+
+	<input class="btn btn-warning" type="submit" value="effacer">
+<div class="flex">
+	<canvas id="ardoiseMagique" width="800" height="600"></canvas>
+	<div class="flex-column">
+	<canvas id="ColorPicker" width="250" height="250">Color picker :
+
+	</canvas>
+
+	<div id="picker"></div>
+
+	<button class="btn btn-info mb-4" id="btnDisplay">Changer couleur</button>
+		<div class="taille">
+	<button class="btn btn-info mb-4" id="btnBross">Changer Taille du pinceau</button>
+			<div id="btns">
+				<label for="rangeSize" ></label>
+				<input type="range" id="rangeSize" max="100" min="1" value="1" class="form-control">
+<!--			<button id="littleSize">Petite taille</button>-->
+<!--				<button id="mediumSize">Medium taille</button>-->
+
+<!--				<button id="bigSize">Grande taille</button>-->
+				<span id="displaySize">1</span>
+			</div>
+		</div>
+	</div>
+	</div>
+    <a class="btn btn-dark" href="index.html">Retour</a>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
